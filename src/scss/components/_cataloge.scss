@@ -1,0 +1,96 @@
+.cataloge{
+    padding-top: 255px;
+    background-color:#752157;
+    &__title{
+        text-align: center;
+        color: var(--color-white);
+        font-size: 60px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        margin-top: 69px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url(../img/cc.svg);
+            width: 55px;
+            height: 48px;
+            transform: translateY(139px);
+            left: -156px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../img/cc.svg);
+            width: 55px;
+            height: 48px;
+            transform: translateY(-50%) rotate(180deg);
+            top: 158px;
+            left: 109%;
+        }
+    }
+    &__content{
+        margin: 0 60px;
+
+        img{
+            max-width: none;
+        }
+    }
+    &__text{
+        color: var(--color-white);
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    &__des{
+        color: var(--color-white);
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            position: absolute;
+            content:'';
+            background-image:url(../img/plus.svg);
+            height: 26px;
+            width: 25px;
+            top: -4px;
+            left: 168px;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+    }
+    &__inf{
+        color: var(--color-white);
+        background-color: #9D1D96;
+        width: 163px;
+        height: 35px;
+        text-align: center;
+        border-top-left-radius: 39px;
+        border-bottom-right-radius: 34px;
+        padding: 7px 10px;
+        border: 1px solid #fff;
+        position: relative;
+        &:hover{
+            background-color: darken(#c50cbcde, 20%);
+            transition: .5s ease-in-out;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/arrow.svg);
+            width: 18px;
+            height: 27px;
+            left: 22px;
+            bottom: 3px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+}
